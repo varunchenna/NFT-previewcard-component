@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+
+--Softblue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Verydarkblue1: hsl(217, 54%, 11%);
+--Verydarkblue2: hsl(216, 50%, 16%);
+--Verydarkblue3: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container{
+    max-height: 520px;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.innercontainer{
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: var(--Verydarkblue2);
+    border-radius: 15px;    
+}
+
+.imgtop{
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgtop img{
+    width: 100%;
+    display: block;
+}
+
+.imgoverlay{
+    position:absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+.imgoverlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imgtop:hover .imgoverlay{
+    display:block;
+}
+
+.boxtext h3{
+    color: var(--White);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 21px;
+    display: inline-block;
+    padding: 20px 0;
+
+}
+
+.boxtext h3:hover{
+    color: var(--Cyan);
+}
+
+.boxtext p{
+    color: var(--Verydarkblue3);
+    font-weight: 400;
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.eth, .days{
+    display: flex;
+    align-items: center;
+}
+
+.eth p{
+    color: var(--Cyan);
+    font-weight: 600;
+    padding: 6px;
+}
+
+.days p{
+    color: var(--Verydarkblue3);
+    font-weight: 400;
+    padding-left: 6px;
+}
+
+hr{
+    border-color: var(--Verydarkblue3);
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.author img{
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+    border: 2px solid var(--White);
+    margin-right: 15px;
+}
+
+.author p{
+    color: var(--Verydarkblue3);
+    font-weight: 400;
+}
+
+.author p a.name{
+    color: var(--White);
+    font-size: 16px;
+}
